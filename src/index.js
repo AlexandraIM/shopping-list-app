@@ -7,6 +7,7 @@ import createSagaMiddleware from 'redux-saga';
 import rootReduser from './store/reducer';
 import App from './App';
 import {watchProducts} from './store/sagas';
+import 'normalize.css';
 
 
 
