@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import {connect} from 'react-redux';
 import * as actions from '../../store/actions';
 import Product from '../../components/Product/Product';
-import ProductForm from '../ProductForm/ProductForm';
+
 
 
  const ProductList = (props) => {
@@ -17,14 +17,11 @@ import ProductForm from '../ProductForm/ProductForm';
   }
 
     return (
-      <div>
-        <ProductForm/>
         <ul>
           {props.products.map(product => (
             <Product key={product.id} clicked={() => handleRemove(product.id)} product={product}/>
             ))}
         </ul>
-      </div>
     )
   
 }
